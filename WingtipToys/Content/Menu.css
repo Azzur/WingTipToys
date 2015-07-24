@@ -25,8 +25,8 @@
 
 .dock ul li a {
     display: block;
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
     position: relative;
     -webkit-transition-property: width, height,margin-top;
     -webkit-transition-duration: 0.5s;
@@ -37,8 +37,8 @@
 }
 
 .dock ul li a:hover {
-    width: 150px;
-    height: 150px;
+    width: 270px;
+    height: 270px;
     margin-top: -50px;
 }
 
