@@ -186,6 +186,7 @@
     <Content Include="Content\Images\galerie.png" />
     <Content Include="Content\Images\harddrive.png" />
     <Content Include="Content\Images\home.png" />
+    <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\safari.png" />
     <Content Include="Content\Images\tools.png" />
     <Content Include="Content\Menu.css" />

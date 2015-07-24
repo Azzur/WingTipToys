@@ -25,8 +25,8 @@
 
 .dock ul li a {
     display: block;
-    height: 180px;
-    width: 180px;
+    height: 181px;
+    width: 181px;
     position: relative;
     -webkit-transition-property: width, height,margin-top;
     -webkit-transition-duration: 0.5s;
