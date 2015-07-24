@@ -7,6 +7,7 @@
     <title>@ViewBag.Title - Mon application ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="@Url.Content("~/Content/Menu.css")" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
@@ -32,6 +33,18 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+
+        <div class="dock">
+            <ul>
+                <li><a href=""><img src="Content/Images/home.png" alt="Home"></a></li>
+                <li><a href=""><img src="Content/Images/apple.png" alt="Apple"></a></li>
+                <li><a href=""><img src="Content/Images/safari.png" alt="Safari"></a></li>
+                <li><a href=""><img src="Content/Images/harddrive.png" alt="harddrive"></a></li>
+                <li><a href=""><img src="Content/Images/tools.png" alt="Tools"></a></li>
+            </ul>
+        </div>
+    </div>
+
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>

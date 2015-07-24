@@ -24,3 +24,15 @@ C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\EntityFramewor
 C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.xml
 C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\obj\Debug\WingtipToys Class.dll
 C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\bin\Debug\wingtiptoys.mdf
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\bin\Debug\wingtiptoys_log.ldf
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\bin\Debug\WingtipToys Class.dll.config
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\bin\Debug\WingtipToys Class.dll
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\bin\Debug\WingtipToys Class.pdb
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\bin\Debug\EntityFramework.dll
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\bin\Debug\EntityFramework.xml
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\obj\Debug\WingtipToys Class.csprojResolveAssemblyReference.cache
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\obj\Debug\WingtipToys Class.dll
+C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
