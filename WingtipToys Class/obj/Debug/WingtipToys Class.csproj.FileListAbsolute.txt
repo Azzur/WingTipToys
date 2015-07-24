@@ -1,0 +1,14 @@
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\wingtiptoys.mdf
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\wingtiptoys_log.ldf
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\WingtipToys Class.dll.config
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\WingtipToys Class.dll
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\WingtipToys Class.pdb
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\EntityFramework.dll
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\EntityFramework.xml
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\fr\EntityFramework.resources.dll
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\obj\Debug\WingtipToys Class.dll
+c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
+C:\Users\Azzzur\Documents\Visual Studio 2013\Projects\WingtipToys\WingtipToys Class\obj\Debug\WingtipToys Class.csprojResolveAssemblyReference.cache
