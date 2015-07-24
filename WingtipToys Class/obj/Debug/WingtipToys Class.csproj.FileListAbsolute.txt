@@ -12,3 +12,15 @@ c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Cl
 c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\obj\Debug\WingtipToys Class.dll
 c:\users\azzzur\documents\visual studio 2013\Projects\WingtipToys\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
 C:\Users\Azzzur\Documents\Visual Studio 2013\Projects\WingtipToys\WingtipToys Class\obj\Debug\WingtipToys Class.csprojResolveAssemblyReference.cache
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\obj\Debug\WingtipToys Class.csprojResolveAssemblyReference.cache
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\wingtiptoys.mdf
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\wingtiptoys_log.ldf
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\WingtipToys Class.dll.config
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\WingtipToys Class.dll
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\WingtipToys Class.pdb
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\EntityFramework.dll
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.dll
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\EntityFramework.xml
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.xml
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\obj\Debug\WingtipToys Class.dll
+C:\projetsgithub\aspnet\WingTipToys-1\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
