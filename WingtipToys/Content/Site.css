@@ -10,18 +10,18 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    height: 460px;
 }
 
-.body-content{
-    float:right;
-    height:460px;
-    width:auto;
-    margin:0;
-    /*padding-right: 6px;*/
+#content-center{
+    margin-left:200px;
+    height: 450px;
+    margin-top: 3px;
     background-image:url("./Images/fond-center.png");
-    background-repeat: no-repeat;
-    /*margin-left:250px !important;*/
+    background-repeat:repeat-x;
+    border-radius: 9px;
 }
+
 
 header{
     height: 200px;
@@ -71,4 +71,23 @@ input[type="checkbox"].input-validation-error {
 
 .validation-summary-valid {
     display: none;
+}
+
+/*footer{
+    background-image:url("./Images/footer.png");
+    margin:0;
+    background-size: 20px 20px 20px 20px;
+    padding:0;
+}*/
+
+@media (max-width: 768px) {
+  .header-right{
+        display:inline;
+        float: none;
+        padding-top: 15px;
+        padding-right: 6px;
+    }
+  header{
+      height:auto;
+  }
 }
