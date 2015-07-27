@@ -3,15 +3,21 @@
     margin-bottom: 76px;
 }
 
+.dock {
+   
+}
 .dock ul {
     /*display: inline-block;*/
     float: left;
-    width: auto;
+     height: 460px;
+    width: 170px;
     margin: 0px;
     padding: 0px;
     list-style: none;
     /*background: rgba(0, 0, 0, 0.3);*/
     /*padding-right: 76px;*/
+    background-image:url("./Images/menu-fond.png");
+    background-repeat:no-repeat;
 }
 
 .dock ul li {
@@ -25,8 +31,8 @@
 
 .dock ul li a {
     display: block;
-    height: 181px;
-    width: 181px;
+    height: 150px;
+    width: 150px;
     position: relative;
     -webkit-transition-property: width, height,margin-top;
     -webkit-transition-duration: 0.5s;
@@ -37,8 +43,8 @@
 }
 
 .dock ul li a:hover {
-    width: 270px;
-    height: 270px;
+    width: 175px;
+    height: 175px;
     margin-top: -50px;
 }
 
@@ -48,5 +54,6 @@
     bottom: 0;
     left: 0;
     border: none;
-    padding: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 35px;
+    margin-left:-10px;  
 }

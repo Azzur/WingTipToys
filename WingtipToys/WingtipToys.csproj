@@ -183,10 +183,14 @@
     <Content Include="Content\Images\apple.png" />
     <Content Include="Content\Images\apropos.png" />
     <Content Include="Content\Images\contact.png" />
+    <Content Include="Content\Images\fond-center.png" />
+    <Content Include="Content\Images\fond-login.png" />
+    <Content Include="Content\Images\fond.png" />
     <Content Include="Content\Images\galerie.png" />
     <Content Include="Content\Images\harddrive.png" />
     <Content Include="Content\Images\home.png" />
     <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\menu-fond.png" />
     <Content Include="Content\Images\safari.png" />
     <Content Include="Content\Images\tools.png" />
     <Content Include="Content\Menu.css" />
