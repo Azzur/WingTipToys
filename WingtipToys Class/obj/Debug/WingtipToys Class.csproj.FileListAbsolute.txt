@@ -45,6 +45,5 @@ C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramewo
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.xml
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys Class.csprojResolveAssemblyReference.cache
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys Class.dll
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
