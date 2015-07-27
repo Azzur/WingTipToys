@@ -193,6 +193,7 @@
     <Content Include="Content\Images\home.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\menu-fond.png" />
+    <Content Include="Content\Images\menu-fondold.png" />
     <Content Include="Content\Images\safari.png" />
     <Content Include="Content\Images\tools.png" />
     <Content Include="Content\Menu.css" />

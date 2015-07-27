@@ -17,7 +17,7 @@
     /*background: rgba(0, 0, 0, 0.3);*/
     /*padding-right: 76px;*/
     background-image:url("./Images/menu-fond.png");
-    background-repeat:no-repeat;
+    border-radius: 9px;
 }
 
 .dock ul li {
@@ -40,6 +40,7 @@
     -o-transition-duration: 0.5s;
     -moz-transition-property: width, height,margin-top;
     -moz-transition-duration: 0.5s;
+    outline: 0;
 }
 
 .dock ul li a:hover {
@@ -57,3 +58,22 @@
     padding: 0px 0px 0px 35px;
     margin-left:-10px;  
 }
+/*
+@media (max-width: 768px) {
+    .dock ul {
+        height: 120px;
+        width: 120px;
+    }
+    .dock ul li {
+        margin-top: -36px;
+    }
+    .dock ul li a {
+        height: 70px;
+        width: 70px;
+    }
+    .dock ul li a:hover {
+        width: 100px;
+        height: 100px;
+    }
+}
+*/

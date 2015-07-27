@@ -15,17 +15,17 @@
 
 #content-center{
     margin-left:200px;
-    height: 450px;
-    margin-top: 3px;
+    height: 460px;
     background-image:url("./Images/fond-center.png");
     background-repeat:repeat-x;
     border-radius: 9px;
+    overflow-y:scroll;
+    
 }
 
 
 header{
     height: 200px;
-    
     text-align: left;
     margin: 0px 30px 0px 30px;
 }
@@ -33,6 +33,8 @@ header{
 .header-left{
     display:inline;
 }
+
+
 .header-right{
     display:inline;
     float: right;
@@ -73,21 +75,20 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-/*footer{
-    background-image:url("./Images/footer.png");
-    margin:0;
-    background-size: 20px 20px 20px 20px;
-    padding:0;
-}*/
-
 @media (max-width: 768px) {
   .header-right{
-        display:inline;
         float: none;
-        padding-top: 15px;
-        padding-right: 6px;
+        display: table-row-group;
     }
   header{
       height:auto;
   }
+  #content-center{
+    margin-left:0;
+    display: -webkit-inline-box;
+  }
+  .logoimg{
+    width:200px;    
+    }
+      
 }
