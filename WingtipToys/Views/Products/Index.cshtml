@@ -38,7 +38,8 @@
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ImagePath)
+            @*@Html.DisplayFor(modelItem => item.ImagePath)*@
+            <img class="product-img" src="@Url.Content("~/Content/Upload/" + item.ImagePath)" / >
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.UnitPrice)

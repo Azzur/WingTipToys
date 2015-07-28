@@ -245,3 +245,14 @@ C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\Microsoft.AspNet.Ident
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\Microsoft.Owin.resources.dll
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\Microsoft.Owin.Security.resources.dll
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\System.Web.Razor.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\fr\System.Web.WebPages.Razor.resources.dll

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -82,14 +83,29 @@ namespace WingtipToys.Controllers
         // plus de détails, voir  http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="ProductID,ProductName,Description,ImagePath,UnitPrice,CategoryID")] Products products)
+        public ActionResult Edit([Bind(Include = "ProductID,ProductName,Description,ImagePath,UnitPrice,CategoryID")] Products products, HttpPostedFileBase upload)
         {
             if (ModelState.IsValid)
             {
+
+//                public static bool HasFile(this HttpPostedFileBase file)
+//{
+//  return (file != null && file.ContentLength > 0) ? true : false;
+//}
+
                 db.Entry(products).State = EntityState.Modified;
                 db.SaveChanges();
+
                 return RedirectToAction("Index");
             }
+          
+
+
+
+
+
+
+
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "CategoryName", products.CategoryID);
             return View(products);
         }

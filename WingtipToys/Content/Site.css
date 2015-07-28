@@ -75,6 +75,12 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
+.product-img{
+    border: solid; 
+    height: 80px; 
+    width: 80px;
+}
+
 @media (max-width: 768px) {
   .header-right{
         float: none;
