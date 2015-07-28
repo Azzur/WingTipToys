@@ -49,12 +49,29 @@ namespace WingtipToys.Controllers
         // plus de détails, voir  http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="ProductID,ProductName,Description,ImagePath,UnitPrice,CategoryID")] Products products)
+        public ActionResult Create([Bind(Include = "ProductID,ProductName,Description,ImagePath,UnitPrice,CategoryID")] Products products, HttpPostedFileBase ImageFile)
         {
             if (ModelState.IsValid)
             {
+
+                //products.ImagePath = ImageFile != null ? ImageFile.FileName : null;
                 db.Products.Add(products);
                 db.SaveChanges();
+
+               
+                if (ImageFile != null)
+                {
+                    db.Entry(products).GetDatabaseValues();
+                    int id = products.ProductID;
+                    string fileName = id.ToString() + "_" + ImageFile.FileName;
+                    string relativePath = @"~\Content\Upload\" + fileName;
+                    ImageFile.SaveAs(Server.MapPath(relativePath));
+
+                    Products productsImg = db.Products.Find(id);
+                    productsImg.ImagePath = fileName;
+                    db.Entry(productsImg).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
                 return RedirectToAction("Index");
             }
 
@@ -83,18 +100,29 @@ namespace WingtipToys.Controllers
         // plus de détails, voir  http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ProductID,ProductName,Description,ImagePath,UnitPrice,CategoryID")] Products products, HttpPostedFileBase upload)
+        public ActionResult Edit([Bind(Include = "ProductID,ProductName,Description,ImagePath,UnitPrice,CategoryID")] Products products, HttpPostedFileBase ImageFile)
         {
             if (ModelState.IsValid)
             {
 
-//                public static bool HasFile(this HttpPostedFileBase file)
-//{
-//  return (file != null && file.ContentLength > 0) ? true : false;
-//}
+                if (ImageFile != null)
+                {
+                    int id = products.ProductID;
+                    string fileName = id.ToString() + "_" + ImageFile.FileName;
+                    string relativePath = @"~\Content\Upload\" + fileName;
+                    ImageFile.SaveAs(Server.MapPath(relativePath));
+                    products.ImagePath = fileName;
+                }
+                else
+                {
+                    products.ImagePath = null;
+                }
 
                 db.Entry(products).State = EntityState.Modified;
                 db.SaveChanges();
+
+                
+                
 
                 return RedirectToAction("Index");
             }

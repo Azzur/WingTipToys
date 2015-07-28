@@ -8,7 +8,7 @@
 
 
 
-@using (Html.BeginForm("", "", FormMethod.Post, new {enctype="multipart/form-data"}))
+@using (Html.BeginForm(null, null, FormMethod.Post, new {enctype="multipart/form-data"}))
 {
     @Html.AntiForgeryToken()
 
@@ -39,12 +39,8 @@
             <div class="col-md-10">
                 @*@Html.EditorFor(model => model.ImagePath)
                 @Html.ValidationMessageFor(model => model.ImagePath)*@
-
-
-              
-
-                <input type="file" id="ImagePath" value="ImagePath" class="text-box single-line" style="display:-webkit-inline-box;display:-moz-box;"/>
-                <img id="imgtest" class="product-img" src="" />
+                <input type="file" id="ImageFile" value="ImageFile" name="ImageFile" class="text-box single-line" style="display:-webkit-inline-box;display:-moz-box;" />
+                <img id="imgPreview" class="product-img" src="@Url.Content(@"~\Content\Upload\" + Model.ImagePath)" />
             </div>
         </div>
 

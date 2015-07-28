@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    $("#ImagePath").on("change", function () {
+    $("#ImageFile").on("change", function () {
         var files = !!this.files ? this.files : [];
         if (!files.length || !window.FileReader) return; 
 
@@ -9,7 +9,7 @@
 
             reader.onloadend = function () { 
 
-                $("#imgtest").attr('src', this.result);
+                $("#imgPreview").attr('src', this.result);
             }
         }
 

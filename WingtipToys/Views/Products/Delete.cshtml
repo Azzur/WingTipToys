@@ -32,7 +32,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.ImagePath)
+            <img id="imgPreview" class="product-img" src="@Url.Content(@"~\Content\Upload\" + Model.ImagePath)" />
         </dd>
 
         <dt>
