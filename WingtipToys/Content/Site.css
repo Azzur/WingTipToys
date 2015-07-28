@@ -42,6 +42,11 @@ header{
     padding-right: 6px;
     background-image:url("./Images/fond-login.png");
     background-repeat: no-repeat;
+    width: 418px;
+    height: 100%;
+}
+.header-right ul,#logoutForm{
+    float: none !important;
 }
 
 
