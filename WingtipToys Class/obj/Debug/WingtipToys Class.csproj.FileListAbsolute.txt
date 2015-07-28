@@ -49,4 +49,3 @@ C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys C
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\fr\EntityFramework.resources.dll
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys Class.csprojResolveAssemblyReference.cache
