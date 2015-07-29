@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="1bbd123ae83b4fba8b83e6d668f179cf" Name="Diagram1">
         <EntityTypeShape EntityType="wingtiptoysModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="wingtiptoysModel.ToysItems" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="wingtiptoysModel.CartItems" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="wingtiptoysModel.Categories" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="wingtiptoysModel.OrderDetails" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="wingtiptoysModel.Orders" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />

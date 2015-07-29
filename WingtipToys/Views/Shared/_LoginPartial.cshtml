@@ -7,10 +7,11 @@
 
     <ul class="nav navbar-nav navbar-right">
         <li>
-            @Html.ActionLink("Bonjour " + User.Identity.GetUserName() + "!", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "Administrer" })
+            @Html.ActionLink("Bonjour " + User.Identity.GetUserName()  + "!", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "Administrer" })
         </li>
         <li><a href="javascript:document.getElementById('logoutForm').submit()">Se déconnecter</a></li>
     </ul>
+    
     }
 }
 else

@@ -16,7 +16,7 @@ namespace WingtipToys_Class
     {
         public Products()
         {
-            this.CartItems = new HashSet<ToysItems>();
+            this.CartItems = new HashSet<CartItems>();
         }
     
         public int ProductID { get; set; }
@@ -26,7 +26,7 @@ namespace WingtipToys_Class
         public Nullable<double> UnitPrice { get; set; }
         public Nullable<int> CategoryID { get; set; }
     
-        public virtual ICollection<ToysItems> CartItems { get; set; }
+        public virtual ICollection<CartItems> CartItems { get; set; }
         public virtual Categories Categories { get; set; }
     }
 }

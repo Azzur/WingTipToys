@@ -7,7 +7,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using WingtipToys_Class;
+using WingtipToys.Logic;
+using WingtipToys.Models;
+using WingtipToys.Model;
 
 namespace WingtipToys.Controllers
 {
@@ -22,7 +24,25 @@ namespace WingtipToys.Controllers
             return View(products.ToList());
         }
 
+        public ActionResult AddToCard(int? id){
+            int productId;
+            if (!String.IsNullOrEmpty(id.ToString()) && int.TryParse(id.ToString(), out productId))
+            {
+                using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+                {
+                    usersShoppingCart.AddToCart(Convert.ToInt16(id.ToString()));
+                }
+
+            }
+            else
+            {
+                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a ProductId.");
+            }
+            return RedirectToAction("Index");
+        }
+
         // GET: /Products/Details/5
+        [Authorize(Roles = "admin")]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -38,6 +58,7 @@ namespace WingtipToys.Controllers
         }
 
         // GET: /Products/Create
+        [Authorize(Roles = "admin")]
         public ActionResult Create()
         {
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "CategoryName");
@@ -47,6 +68,7 @@ namespace WingtipToys.Controllers
         // POST: /Products/Create
         // Afin de déjouer les attaques par sur-validation, activez les propriétés spécifiques que vous voulez lier. Pour 
         // plus de détails, voir  http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ProductID,ProductName,Description,ImagePath,UnitPrice,CategoryID")] Products products, HttpPostedFileBase ImageFile)
@@ -58,7 +80,7 @@ namespace WingtipToys.Controllers
                 db.Products.Add(products);
                 db.SaveChanges();
 
-               
+
                 if (ImageFile != null)
                 {
                     db.Entry(products).GetDatabaseValues();
@@ -80,6 +102,7 @@ namespace WingtipToys.Controllers
         }
 
         // GET: /Products/Edit/5
+        [Authorize(Roles = "admin")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -98,6 +121,7 @@ namespace WingtipToys.Controllers
         // POST: /Products/Edit/5
         // Afin de déjouer les attaques par sur-validation, activez les propriétés spécifiques que vous voulez lier. Pour 
         // plus de détails, voir  http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ProductID,ProductName,Description,ImagePath,UnitPrice,CategoryID")] Products products, HttpPostedFileBase ImageFile)
@@ -121,24 +145,18 @@ namespace WingtipToys.Controllers
                 db.Entry(products).State = EntityState.Modified;
                 db.SaveChanges();
 
-                
-                
+
+
 
                 return RedirectToAction("Index");
             }
-          
-
-
-
-
-
-
 
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "CategoryName", products.CategoryID);
             return View(products);
         }
 
         // GET: /Products/Delete/5
+        [Authorize(Roles = "admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -154,6 +172,7 @@ namespace WingtipToys.Controllers
         }
 
         // POST: /Products/Delete/5
+        [Authorize(Roles = "admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

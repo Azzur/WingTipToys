@@ -150,7 +150,7 @@
           <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
           <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
-        <EntityType Name="ToysItems">
+        <EntityType Name="CartItems">
           <Key>
             <PropertyRef Name="ItemId" />
           </Key>
@@ -220,7 +220,7 @@
           <End Role="Products" Type="Self.Products" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="CartItems" Type="wingtiptoysModel.ToysItems" Multiplicity="*" />
+          <End Role="CartItems" Type="wingtiptoysModel.CartItems" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Products">
               <PropertyRef Name="ProductID" />
@@ -258,7 +258,7 @@
         </Association>
         <EntityContainer Name="wingtiptoysEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
-          <EntitySet Name="CartItems" EntityType="wingtiptoysModel.ToysItems" />
+          <EntitySet Name="CartItems" EntityType="wingtiptoysModel.CartItems" />
           <EntitySet Name="Categories" EntityType="Self.Categories" />
           <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" />
           <EntitySet Name="Orders" EntityType="Self.Orders" />
@@ -293,7 +293,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CartItems">
-            <EntityTypeMapping TypeName="wingtiptoysModel.ToysItems">
+            <EntityTypeMapping TypeName="wingtiptoysModel.CartItems">
               <MappingFragment StoreEntitySet="CartItems">
                 <ScalarProperty Name="ItemId" ColumnName="ItemId" />
                 <ScalarProperty Name="CartId" ColumnName="CartId" />

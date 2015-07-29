@@ -10,17 +10,20 @@ using WingtipToys.Models;
 
 namespace WingtipToys.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class AdminController : Controller
     {
         private ProductContext db = new ProductContext();
 
         // GET: Admin
+       
         public ActionResult Index()
         {
             return View(db.Categories.ToList());
         }
 
         // GET: Admin/Details/5
+
         public ActionResult Details(int? id)
         {
             if (id == null)

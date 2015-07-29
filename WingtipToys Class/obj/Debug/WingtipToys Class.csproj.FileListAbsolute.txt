@@ -36,19 +36,6 @@ C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\obj\Debug\WingtipToys Clas
 C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\obj\Debug\WingtipToys Class.dll
 C:\Users\Nenex\Desktop\INSTA\projet\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
 C:\Users\Azzzur\Documents\Visual Studio 2013\Projects\WingtipToys\WingtipToys Class\obj\Debug\WingtipToys Class.csprojResolveAssemblyReference.cache
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\wingtiptoys.mdf
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\wingtiptoys_log.ldf
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\WingtipToys Class.dll.config
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\WingtipToys Class.dll
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\WingtipToys Class.pdb
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.dll
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.xml
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys Class.dll
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\fr\EntityFramework.resources.dll
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
 C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys Class\bin\Debug\wingtiptoys.mdf
 C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys Class\bin\Debug\wingtiptoys_log.ldf
 C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys Class\bin\Debug\WingtipToys Class.dll.config
@@ -61,3 +48,16 @@ C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys Class\bin\Debug\EntityFramework.
 C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys Class\obj\Debug\WingtipToys Class.csprojResolveAssemblyReference.cache
 C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys Class\obj\Debug\WingtipToys Class.dll
 C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys Class\obj\Debug\WingtipToys Class.pdb
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\wingtiptoys.mdf
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\wingtiptoys_log.ldf
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\WingtipToys Class.dll.config
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\WingtipToys Class.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\WingtipToys Class.pdb
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.xml
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys Class.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys Class\obj\Debug\WingtipToys Class.pdb

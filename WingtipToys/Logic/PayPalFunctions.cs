@@ -11,6 +11,7 @@ using WingtipToys;
 using WingtipToys.Models;
 using System.Collections.Generic;
 using System.Linq;
+using WingtipToys.Model;
 
 public class NVPAPICaller
 {
@@ -75,12 +76,12 @@ public class NVPAPICaller
     // Get the Shopping Cart Products
     using (WingtipToys.Logic.ShoppingCartActions myCartOrders = new WingtipToys.Logic.ShoppingCartActions())
     {
-      List<CartItem> myOrderList = myCartOrders.GetCartItems();
+      List<CartItems> myOrderList = myCartOrders.GetCartItems();
 
       for (int i = 0; i < myOrderList.Count; i++)
       {
-        encoder["L_PAYMENTREQUEST_0_NAME" + i] = myOrderList[i].Product.ProductName.ToString();
-        encoder["L_PAYMENTREQUEST_0_AMT" + i] = myOrderList[i].Product.UnitPrice.ToString();
+        encoder["L_PAYMENTREQUEST_0_NAME" + i] = myOrderList[i].Products.ProductName.ToString();
+        encoder["L_PAYMENTREQUEST_0_AMT" + i] = myOrderList[i].Products.UnitPrice.ToString();
         encoder["L_PAYMENTREQUEST_0_QTY" + i] = myOrderList[i].Quantity.ToString();
       }
     }

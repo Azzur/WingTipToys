@@ -12,7 +12,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CartItems">
-      <EntityTypeMapping TypeName="wingtiptoysModel.ToysItems">
+      <EntityTypeMapping TypeName="wingtiptoysModel.CartItems">
         <MappingFragment StoreEntitySet="CartItems">
           <ScalarProperty Name="ItemId" ColumnName="ItemId" />
           <ScalarProperty Name="CartId" ColumnName="CartId" />

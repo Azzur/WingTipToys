@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using WingtipToys.Models;
+using WingtipToys.Model;
 
 namespace WingtipToys.Logic
 {
@@ -10,7 +11,7 @@ namespace WingtipToys.Logic
   {
     public string ShoppingCartId { get; set; }
 
-    private ProductContext _db = new ProductContext();
+    private wingtiptoysEntities _db = new wingtiptoysEntities();
 
     public const string CartSessionKey = "CartId";
 
@@ -19,24 +20,24 @@ namespace WingtipToys.Logic
       // Retrieve the product from the database.           
       ShoppingCartId = GetCartId();
 
-      var cartItem = _db.ShoppingCartItems.SingleOrDefault(
+      var cartItem = _db.CartItems.SingleOrDefault(
           c => c.CartId == ShoppingCartId
           && c.ProductId == id);
       if (cartItem == null)
       {
         // Create a new cart item if no cart item exists.                 
-        cartItem = new CartItem
+        cartItem = new CartItems
         {
           ItemId = Guid.NewGuid().ToString(),
           ProductId = id,
           CartId = ShoppingCartId,
-          Product = _db.Products.SingleOrDefault(
-           p => p.ProductID == id),
+          Products = _db.Products.SingleOrDefault(
+          p => p.ProductID == id),
           Quantity = 1,
           DateCreated = DateTime.Now
         };
 
-        _db.ShoppingCartItems.Add(cartItem);
+        _db.CartItems.Add(cartItem);
       }
       else
       {
@@ -74,11 +75,11 @@ namespace WingtipToys.Logic
       return HttpContext.Current.Session[CartSessionKey].ToString();
     }
 
-    public List<CartItem> GetCartItems()
+    public List<CartItems> GetCartItems()
     {
       ShoppingCartId = GetCartId();
 
-      return _db.ShoppingCartItems.Where(
+      return _db.CartItems.Where(
           c => c.CartId == ShoppingCartId).ToList();
     }
 
@@ -89,10 +90,10 @@ namespace WingtipToys.Logic
       // the current price for each of those products in the cart.  
       // Sum all product price totals to get the cart total.   
       decimal? total = decimal.Zero;
-      total = (decimal?)(from cartItems in _db.ShoppingCartItems
+      total = (decimal?)(from cartItems in _db.CartItems
                          where cartItems.CartId == ShoppingCartId
                          select (int?)cartItems.Quantity *
-                         cartItems.Product.UnitPrice).Sum();
+                         cartItems.Products.UnitPrice).Sum();
       return total ?? decimal.Zero;
     }
 
@@ -107,18 +108,18 @@ namespace WingtipToys.Logic
 
     public void UpdateShoppingCartDatabase(String cartId, ShoppingCartUpdates[] CartItemUpdates)
     {
-      using (var db = new WingtipToys.Models.ProductContext())
+        using (var db = new wingtiptoysEntities())
       {
         try
         {
           int CartItemCount = CartItemUpdates.Count();
-          List<CartItem> myCart = GetCartItems();
+          List<CartItems> myCart = GetCartItems();
           foreach (var cartItem in myCart)
           {
             // Iterate through all rows within shopping cart list
             for (int i = 0; i < CartItemCount; i++)
             {
-              if (cartItem.Product.ProductID == CartItemUpdates[i].ProductId)
+              if (cartItem.Products.ProductID == CartItemUpdates[i].ProductId)
               {
                 if (CartItemUpdates[i].PurchaseQuantity < 1 || CartItemUpdates[i].RemoveItem == true)
                 {
@@ -141,15 +142,15 @@ namespace WingtipToys.Logic
 
     public void RemoveItem(string removeCartID, int removeProductID)
     {
-      using (var _db = new WingtipToys.Models.ProductContext())
+        using (var _db = new wingtiptoysEntities())
       {
         try
         {
-          var myItem = (from c in _db.ShoppingCartItems where c.CartId == removeCartID && c.Product.ProductID == removeProductID select c).FirstOrDefault();
+          var myItem = (from c in _db.CartItems where c.CartId == removeCartID && c.Products.ProductID == removeProductID select c).FirstOrDefault();
           if (myItem != null)
           {
             // Remove Item.
-            _db.ShoppingCartItems.Remove(myItem);
+            _db.CartItems.Remove(myItem);
             _db.SaveChanges();
           }
         }
@@ -162,11 +163,11 @@ namespace WingtipToys.Logic
 
     public void UpdateItem(string updateCartID, int updateProductID, int quantity)
     {
-      using (var _db = new WingtipToys.Models.ProductContext())
+      using (var _db = new wingtiptoysEntities())
       {
         try
         {
-          var myItem = (from c in _db.ShoppingCartItems where c.CartId == updateCartID && c.Product.ProductID == updateProductID select c).FirstOrDefault();
+          var myItem = (from c in _db.CartItems where c.CartId == updateCartID && c.Products.ProductID == updateProductID select c).FirstOrDefault();
           if (myItem != null)
           {
             myItem.Quantity = quantity;
@@ -183,11 +184,11 @@ namespace WingtipToys.Logic
     public void EmptyCart()
     {
       ShoppingCartId = GetCartId();
-      var cartItems = _db.ShoppingCartItems.Where(
+      var cartItems = _db.CartItems.Where(
           c => c.CartId == ShoppingCartId);
       foreach (var cartItem in cartItems)
       {
-        _db.ShoppingCartItems.Remove(cartItem);
+        _db.CartItems.Remove(cartItem);
       }
       // Save changes.             
       _db.SaveChanges();
@@ -198,7 +199,7 @@ namespace WingtipToys.Logic
       ShoppingCartId = GetCartId();
 
       // Get the count of each item in the cart and sum them up          
-      int? count = (from cartItems in _db.ShoppingCartItems
+      int? count = (from cartItems in _db.CartItems
                     where cartItems.CartId == ShoppingCartId
                     select (int?)cartItems.Quantity).Sum();
       // Return 0 if all entries are null         
@@ -214,8 +215,8 @@ namespace WingtipToys.Logic
 
     public void MigrateCart(string cartId, string userName)
     {
-      var shoppingCart = _db.ShoppingCartItems.Where(c => c.CartId == cartId);
-      foreach (CartItem item in shoppingCart)
+      var shoppingCart = _db.CartItems.Where(c => c.CartId == cartId);
+      foreach (CartItems item in shoppingCart)
       {
         item.CartId = userName;
       }

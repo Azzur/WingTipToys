@@ -14,3 +14,4 @@ namespace WingtipToys.Models
     public DbSet<OrderDetail> OrderDetails { get; set; }
   }
 }
+

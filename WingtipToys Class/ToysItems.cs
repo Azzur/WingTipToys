@@ -12,7 +12,7 @@ namespace WingtipToys_Class
     using System;
     using System.Collections.Generic;
     
-    public partial class ToysItems
+    public partial class CartItems
     {
         public string ItemId { get; set; }
         public string CartId { get; set; }
