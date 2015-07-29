@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WingtipToys.Models.CartItem>
+﻿@model IEnumerable<WingtipToys.Model.CartItems>
 
 @{
     ViewBag.Title = "Index";
@@ -12,7 +12,7 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Product.ProductName)
+            @Html.DisplayNameFor(model => model.Products.ProductName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.CartId)
@@ -29,7 +29,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Product.ProductName)
+            @Html.DisplayFor(modelItem => item.Products.ProductName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.CartId)

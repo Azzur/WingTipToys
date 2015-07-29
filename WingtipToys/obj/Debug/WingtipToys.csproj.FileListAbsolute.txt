@@ -237,7 +237,6 @@ C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys\bin\System.Web.WebPages.Razor.xm
 C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys\obj\Debug\WingtipToys.csprojResolveAssemblyReference.cache
 C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys\obj\Debug\WingtipToys.dll
 C:\Users\Azzzur\Desktop\WingTipToys\WingtipToys\obj\Debug\WingtipToys.pdb
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\obj\Debug\WingtipToys.csprojResolveAssemblyReference.cache
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\WingtipToys.dll.config
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\WingtipToys.dll
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\WingtipToys.pdb
@@ -267,8 +266,6 @@ C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\System.Web.WebPages.Deplo
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\System.Web.WebPages.dll
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\System.Web.WebPages.Razor.dll
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\WebGrease.dll
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\WingtipToys.Model.dll
-C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\WingtipToys.Model.pdb
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\Antlr3.Runtime.pdb
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\EntityFramework.xml
 C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys\bin\EntityFramework.SqlServer.xml

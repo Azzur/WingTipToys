@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipToys", "WingtipToys\WingtipToys.csproj", "{3F0734A4-24EC-48AC-B295-8787195CD7BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipToys.Model", "WingtipToys.Model\WingtipToys.Model.csproj", "{9059C719-727E-4637-93A0-00CD2FBF99E5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{3F0734A4-24EC-48AC-B295-8787195CD7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F0734A4-24EC-48AC-B295-8787195CD7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F0734A4-24EC-48AC-B295-8787195CD7BC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9059C719-727E-4637-93A0-00CD2FBF99E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9059C719-727E-4637-93A0-00CD2FBF99E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9059C719-727E-4637-93A0-00CD2FBF99E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9059C719-727E-4637-93A0-00CD2FBF99E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

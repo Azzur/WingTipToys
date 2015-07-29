@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using WingtipToys.Models;
+using WingtipToys.Model;
 
 namespace WingtipToys.Logic
 {
@@ -10,14 +10,14 @@ namespace WingtipToys.Logic
   {
     public bool AddProduct(string ProductName, string ProductDesc, string ProductPrice, string ProductCategory, string ProductImagePath)
     {
-      var myProduct = new Product();
+      var myProduct = new Products();
       myProduct.ProductName = ProductName;
       myProduct.Description = ProductDesc;
       myProduct.UnitPrice = Convert.ToDouble(ProductPrice);
       myProduct.ImagePath = ProductImagePath;
       myProduct.CategoryID = Convert.ToInt32(ProductCategory);
 
-      using (ProductContext _db = new ProductContext())
+      using (wingtiptoysEntities _db = new wingtiptoysEntities())
       {
         // Add product to DB.
         _db.Products.Add(myProduct);

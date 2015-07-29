@@ -6,14 +6,14 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using WingtipToys.Models;
+using WingtipToys.Model;
 
 namespace WingtipToys.Controllers
 {
     [Authorize(Roles = "admin")]
     public class AdminController : Controller
     {
-        private ProductContext db = new ProductContext();
+        private wingtiptoysEntities db = new wingtiptoysEntities();
 
         // GET: Admin
        
@@ -30,7 +30,7 @@ namespace WingtipToys.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Category category = db.Categories.Find(id);
+            Categories category = db.Categories.Find(id);
             if (category == null)
             {
                 return HttpNotFound();
@@ -49,7 +49,7 @@ namespace WingtipToys.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CategoryID,CategoryName,Description")] Category category)
+        public ActionResult Create([Bind(Include = "CategoryID,CategoryName,Description")] Categories category)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace WingtipToys.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Category category = db.Categories.Find(id);
+            Categories category = db.Categories.Find(id);
             if (category == null)
             {
                 return HttpNotFound();
@@ -81,7 +81,7 @@ namespace WingtipToys.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "CategoryID,CategoryName,Description")] Category category)
+        public ActionResult Edit([Bind(Include = "CategoryID,CategoryName,Description")] Categories category)
         {
             if (ModelState.IsValid)
             {
@@ -99,7 +99,7 @@ namespace WingtipToys.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Category category = db.Categories.Find(id);
+            Categories category = db.Categories.Find(id);
             if (category == null)
             {
                 return HttpNotFound();
@@ -112,7 +112,7 @@ namespace WingtipToys.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Category category = db.Categories.Find(id);
+            Categories category = db.Categories.Find(id);
             db.Categories.Remove(category);
             db.SaveChanges();
             return RedirectToAction("Index");
